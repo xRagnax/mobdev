@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestExamen_0</string>
+    <string name="access_vault">Access Vault</string>
+    <string name="plus">+</string>
+    <string name="txtZero">0</string>
+    <string name="txtOne">0</string>
+    <string name="txtTwo">0</string>
+    <string name="min">-</string>
+    <string name="access_denied">Nope</string>
+    <string name="title_activity_vault">vault</string>
+    <string name="amout_of_atempts">Attempts:</string>
+</resources>

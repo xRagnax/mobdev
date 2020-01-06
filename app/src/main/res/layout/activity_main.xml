@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAccess"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="244dp"
+        android:text="@string/access_vault"
+        android:textAllCaps="true"
+        android:onClick="Access"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnMinTwo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnMinZero" />
+
+    <Button
+        android:id="@+id/btnPlusZero"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/plus"
+        android:onClick="CountUp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinZero"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlusOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlusOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/plus"
+        android:onClick="CountUp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlusTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/plus"
+        android:onClick="CountUp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/btnPlusOne" />
+
+    <TextView
+        android:id="@+id/txtZero"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="@string/txtZero"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinZero"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlusZero"
+        app:layout_constraintStart_toStartOf="@+id/btnPlusZero"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlusZero" />
+
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtOne"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinOne"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlusOne"
+        app:layout_constraintStart_toStartOf="@+id/btnPlusOne"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlusOne" />
+
+    <TextView
+        android:id="@+id/txtTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTwo"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinTwo"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlusTwo"
+        app:layout_constraintStart_toStartOf="@+id/btnPlusTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlusTwo" />
+
+    <Button
+        android:id="@+id/btnMinZero"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/min"
+        android:onClick="CountDown"
+        app:layout_constraintBottom_toTopOf="@+id/btnAccess"
+        app:layout_constraintEnd_toStartOf="@+id/btnMinOne"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMinOne"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/min"
+        android:onClick="CountDown"
+        app:layout_constraintBottom_toTopOf="@+id/btnAccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMinTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/min"
+        android:onClick="CountDown"
+        app:layout_constraintBottom_toTopOf="@+id/btnAccess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/btnMinOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
